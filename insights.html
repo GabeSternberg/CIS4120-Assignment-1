@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="header">
+            <div class="city-time">
+                <h1 id="fancy">Philadelphia</h1>
+                <span class="time">3:32 PM</span>
+            </div>
+            <div class="current-weather">
+                <div class="top-row">
+                    <div class="temperature">
+                        <p class="high-low">High: 54° Low: 41°</p>
+                        <h2>52°</h2>
+                        <p>Feels like 48°</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/raincloud.png" alt="Rain Icon">
+                        <p>Rain until 6:00PM</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/windicon.png" alt="Wind Icon">
+                        <p>Windy (13 MPH)</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/sunicon.png" alt="Sun Icon">
+                        <p>Sunset at 5:14PM</p>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <div class="stat-box">
+                        <h2>0</h2>
+                        <p>UV Index (Low)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>55</h2>
+                        <p>Air Quality (Moderate)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>67%</h2>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insights-section">
+            <h2>Today's Weather Insights</h2>
+            <p>
+                Expect a cool and breezy day in Philadelphia, with a high of 54°F and a low of 41°F. 
+                Rain showers are expected until the early afternoon, followed by cloudy skies. Winds will be moderate at 13 MPH, 
+                making it feel slightly colder. Humidity is at 67%, and the UV index is low, meaning minimal sun exposure risks. 
+            </p>
+            <p>
+                How to Dress: A light jacket or sweater is recommended, along with water-resistant shoes due to the rain. 
+                If you're heading out in the evening, a warmer coat may be necessary as temperatures drop. 
+                An umbrella could be useful for the afternoon showers.
+            </p>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <a href="hourly.html"><button>Hourly Forecast</button></a>
+            <a href="index.html"><button>Weekly Forecast</button></a>
+            <a href="historical.html"><button>Historical Forecast</button></a>
+            <a href="insights.html"><button class="active">Insights</button></a>
+        </div>
+    </div>
+</body>
+</html>

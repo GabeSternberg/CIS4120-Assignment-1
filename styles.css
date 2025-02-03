@@ -1,0 +1,266 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7e6;
+}
+
+.weather-app {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eeeace; /* Light beige background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.city-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-time h1 {
+    margin: 0;
+}
+
+.city-time .time {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.current-weather {
+    font-family: "JetBrains Mono", serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    gap: 2px; 
+    padding-bottom: 2px; 
+}
+
+.current-weather .temperature h2 {
+    
+    font-size: 48px;
+    margin: 0px;
+}
+
+.weather-details,
+.extra-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.weekly-forecast {
+    display: grid;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f4ff;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 3px solid #000;
+}
+
+.day span {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Small spacing between text and icon */
+}
+
+.day img.icon {
+    width: 18px; /* Adjust icon size */
+    height: auto;
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle;
+}
+
+.day img.day-icon {
+    width: 30px; 
+    height: auto;
+}
+
+
+.day[data-highlight="yellow"] {
+    background-color: #fff8d5;
+}
+
+.day[data-highlight="true"] {
+    background-color: #d6e8ff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.footer button {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 3px solid #000;
+    width: 100%;
+}
+
+.footer button.active {
+    background-color: #ccffcc;
+    font-weight: bold;
+}
+
+#fancy {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+.top-row {
+    font-family: "JetBrains Mono", serif;
+    display: flex;
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Vertically center content */
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.top-row > div {
+    flex: 1;
+    text-align: center;
+}
+
+.temperature h2 {
+    font-size: 48px; 
+    margin: 0;
+}
+
+.temperature p {
+    font-size: 9px;
+    color: #666;
+    margin: 0;
+}
+
+.bottom-row {
+    font-family: "JetBrains Mono", serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.stat-box {
+    font-family: "JetBrains Mono", serif;
+    display: flex;
+    flex-direction: column; /* Stack number above text */
+    align-items: center;
+    flex: 1; /* Make them evenly spaced */
+}
+
+.stat-box h2 {
+    font-size: 48px; /* Large number */
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-box p {
+    font-size: 10px; /* Smaller descriptive text */
+    color: #666;
+    margin: 0;
+}
+
+.extra-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensure icons are centered */
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.extra-details img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 2px; /* Minor spacing */
+}
+
+.high-low {
+    font-size: 7px; /* Same as "Feels like" text */
+    color: #666; /* Optional: subtle color */
+    margin-bottom: 0px; /* Reduce spacing */
+}
+
+.insights-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.insights-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.insights-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.historical-edit {
+    display: flex;
+    flex-direction: column; /* Stack High and Low vertically */
+    align-items: center; /* Center text */
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1; /* Reduce line spacing */
+    gap: 2px; /* Minimal spacing between High and Low */
+    margin: 0;
+    padding: 0;
+}
+
+.historical-edit p {
+    margin: 0; /* Remove default paragraph margins */
+    padding: 0;
+}

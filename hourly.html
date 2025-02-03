@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="header">
+            <div class="city-time">
+                <h1 id="fancy">Philadelphia</h1>
+                <span class="time">3:32 PM</span>
+            </div>
+            <div class="current-weather">
+                <div class="top-row">
+                    <div class="temperature">
+                        <p class="high-low">High: 54° Low: 41°</p>
+                        <h2>52°</h2>
+                        <p>Feels like 48°</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/raincloud.png" alt="Rain Icon">
+                        <p>Rain until 6:00PM</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/windicon.png" alt="Wind Icon">
+                        <p>Windy (13 MPH)</p>
+                    </div>
+                    <div class="extra-details">
+                        <img src="assets/sunicon.png" alt="Sun Icon">
+                        <p>Sunset at 5:14PM</p>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <div class="stat-box">
+                        <h2>0</h2>
+                        <p>UV Index (Low)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>55</h2>
+                        <p>Air Quality (Moderate)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>67%</h2>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weekly-forecast">
+            <div class="day" data-highlight="true">
+                <span>3PM <img src="assets/raincloud.png" class="day-icon" alt="Rain Cloud"></span>
+                <span>54°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 13mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 80%</span>
+            </div>
+            <div class="day" data-highlight="true">
+                <span>4PM <img src="assets/raincloud.png" class="day-icon" alt="Rain Cloud"></span>
+                <span>55°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 14mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 90%</span>
+            </div>
+            <div class="day" data-highlight="true">
+                <span>5PM <img src="assets/raincloud.png" class="day-icon" alt="Rain Cloud"></span>
+                <span>53°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 12mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 75%</span>
+            </div>
+            <div class="day" data-highlight="true">
+                <span>6PM <img src="assets/raincloud.png" class="day-icon" alt="Rain Cloud"></span>
+                <span>52°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 13mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 65%</span>
+            </div>
+            <div class="day">
+                <span>7PM <img src="assets/cloudicon.png" class="day-icon" alt="Cloud"></span>
+                <span>51°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 11mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 10%</span>
+            </div>
+            <div class="day">
+                <span>8PM <img src="assets/cloudicon.png" class="day-icon" alt="Cloud"></span>
+                <span>50°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 17mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 10%</span>
+            </div>
+            <div class="day">
+                <span>9PM <img src="assets/cloudicon.png" class="day-icon" alt="Cloud"></span>
+                <span>50°</span>
+                <span><img src="assets/windicon.png" class="icon" alt="Wind Icon"> 18mph</span>
+                <span><img src="assets/raindrop.png" class="icon" alt="Rain Icon"> 20%</span>
+            </div>
+        </div>
+
+        <!-- Footer Section (Added) -->
+        <div class="footer">
+            <a href="hourly.html"><button class="active">Hourly Forecast</button></a>
+            <a href="index.html"><button>Weekly Forecast</button></a>
+            <a href="historical.html"><button>Historical Forecast</button></a>
+            <a href="insights.html"><button>Insights</button></a>
+        </div>
+    </div>
+</body>
+</html>
